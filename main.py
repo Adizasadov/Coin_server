@@ -6,6 +6,11 @@ import os
 app = Flask(__name__)
 query_model.init()
 
+@app.route('/')
+def index():
+    return "Catmotion Server"
+
+
 @app.route('/classify', methods=['POST'])
 def classify():
     binary_data = request.data

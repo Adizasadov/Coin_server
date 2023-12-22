@@ -47,7 +47,7 @@ def init():
     model2.load_state_dict(torch.load('./models/model2_h15.pth'))
     model2.eval()
 
-    print("Initialized model 1")
+    print("Initialized model 2")
 
 def create_spectrogram(audio_path):
     waveform, sample_rate = torchaudio.load(audio_path)
